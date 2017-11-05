@@ -1,4 +1,330 @@
-[{"configurationIdentifier":"XXXXXX043","configurationName":"Unacceptable Shipment Description GOODS","parameters":{"consolidatedExpression":"($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ","include":{"awbOriginAirport":{"parameterDescription":"Origin Airport","parameterValue":["FRA"],"parameterCode":"awbOriginAirport"},"agentCode":{"parameterDescription":"Agent","parameterValue":["1","00","00","48","17","34","12","41","000"],"parameterCode":"agentCode"},"awbSCC":{"parameterDescription":"SCC","parameterValue":["ECC","ECX"],"parameterCode":"awbSCC"},"invocationSource":{"parameterDescription":"Invocation Source","parameterValue":["FWB","XFWB"],"parameterCode":"invocationSource"},"ownerCode":{"parameterDescription":"Airline Code","parameterValue":["VIN"],"parameterCode":"ownerCode"},"messageOriginator":{"parameterDescription":"Originator ","parameterValue":["AGT"],"parameterCode":"messageOriginator"}}},"evaluation":{"consolidatedAttributeRuleExpression":"$(shipmentDescription).equalsIgnoreCase(\"GOODS\")","attributeEvaluation":{"shipmentDescription":{"fieldDescription":"Nature and quantity of goods - Goods description","fieldValue":"GOODS","operation":"EXACT-MATCH","fieldIdentifier":"shipmentDescription","evaluationExpression":"$(shipmentDescription).equalsIgnoreCase(\"GOODS\")"}}},"output":{"ruleCatogory":"S","validationType":"messageError","outputMap":{"recommendedText":"Goods description GOODS is not  sufficient due to customs restrictions. Please insert a more exact description. See the link below for a list with examples of acceptable terms.","mipErrorCode":"RTD12","mipErrorCodeDescription":"Invalid or missing rate description details - goods description - nature and quantity of goods"}}},
-{"configurationIdentifier":"XXXXXX066","configurationName":"Unacceptable Shipment Description PLANTS","parameters":{"consolidatedExpression":"($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ","include":{"awbOriginAirport":{"parameterDescription":"Origin Airport","parameterValue":["FRA"],"parameterCode":"awbOriginAirport"},"agentCode":{"parameterDescription":"Agent","parameterValue":["1","00","00","48","17","34","12","41","000"],"parameterCode":"agentCode"},"awbSCC":{"parameterDescription":"SCC","parameterValue":["ECC","ECX"],"parameterCode":"awbSCC"},"invocationSource":{"parameterDescription":"Invocation Source","parameterValue":["FWB","XFWB"],"parameterCode":"invocationSource"},"ownerCode":{"parameterDescription":"Airline Code","parameterValue":["VIN"],"parameterCode":"ownerCode"},"messageOriginator":{"parameterDescription":"Originator ","parameterValue":["AGT"],"parameterCode":"messageOriginator"}}},"evaluation":{"consolidatedAttributeRuleExpression":"$(shipmentDescription).equalsIgnoreCase(\"PLANTS\")","attributeEvaluation":{"shipmentDescription":{"fieldDescription":"Nature and quantity of goods - Goods description","fieldValue":"PLANTS","operation":"EXACT-MATCH","fieldIdentifier":"shipmentDescription","evaluationExpression":"$(shipmentDescription).equalsIgnoreCase(\"PLANTS\")"}}},"output":{"ruleCatogory":"S","validationType":"messageError","outputMap":{"recommendedText":"Goods description PLANTS is not  sufficient due to customs restrictions. Please insert a more exact description e.g. Tulips, rose, lemon, willow tree. See the link below for a list with examples of acceptable terms.","mipErrorCode":"RTD12","mipErrorCodeDescription":"Invalid or missing rate description details - goods description - nature and quantity of goods"}}},
-{"configurationIdentifier":"XXXXXX060","configurationName":"Unacceptable Shipment Description PARCEL","parameters":{"consolidatedExpression":"($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ","include":{"awbOriginAirport":{"parameterDescription":"Origin Airport","parameterValue":["FRA"],"parameterCode":"awbOriginAirport"},"agentCode":{"parameterDescription":"Agent","parameterValue":["1","00","00","48","17","34","12","41","000"],"parameterCode":"agentCode"},"awbSCC":{"parameterDescription":"SCC","parameterValue":["ECC","ECX"],"parameterCode":"awbSCC"},"invocationSource":{"parameterDescription":"Invocation Source","parameterValue":["FWB","XFWB"],"parameterCode":"invocationSource"},"ownerCode":{"parameterDescription":"Airline Code","parameterValue":["VIN"],"parameterCode":"ownerCode"},"messageOriginator":{"parameterDescription":"Originator ","parameterValue":["AGT"],"parameterCode":"messageOriginator"}}},"evaluation":{"consolidatedAttributeRuleExpression":"$(shipmentDescription).equalsIgnoreCase(\"PARCEL\")","attributeEvaluation":{"shipmentDescription":{"fieldDescription":"Nature and quantity of goods - Goods description","fieldValue":"PARCEL","operation":"EXACT-MATCH","fieldIdentifier":"shipmentDescription","evaluationExpression":"$(shipmentDescription).equalsIgnoreCase(\"PARCEL\")"}}},"output":{"ruleCatogory":"S","validationType":"messageError","outputMap":{"recommendedText":"Goods description PARCEL is not  sufficient due to customs restrictions. Please insert a more exact description. See the link below for a list with examples of acceptable terms.","mipErrorCode":"RTD12","mipErrorCodeDescription":"Invalid or missing rate description details - goods description - nature and quantity of goods"}}},
-{"configurationIdentifier":"XXXXXX061","configurationName":"Unacceptable Shipment Description PARTS","parameters":{"consolidatedExpression":"($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ","include":{"awbOriginAirport":{"parameterDescription":"Origin Airport","parameterValue":["FRA"],"parameterCode":"awbOriginAirport"},"agentCode":{"parameterDescription":"Agent","parameterValue":["1","00","00","48","17","34","12","41","000"],"parameterCode":"agentCode"},"awbSCC":{"parameterDescription":"SCC","parameterValue":["ECC","ECX"],"parameterCode":"awbSCC"},"invocationSource":{"parameterDescription":"Invocation Source","parameterValue":["FWB","XFWB"],"parameterCode":"invocationSource"},"ownerCode":{"parameterDescription":"Airline Code","parameterValue":["VIN"],"parameterCode":"ownerCode"},"messageOriginator":{"parameterDescription":"Originator ","parameterValue":["AGT"],"parameterCode":"messageOriginator"}}},"evaluation":{"consolidatedAttributeRuleExpression":"$(shipmentDescription).equalsIgnoreCase(\"PARTS\")","attributeEvaluation":{"shipmentDescription":{"fieldDescription":"Nature and quantity of goods - Goods description","fieldValue":"PARTS","operation":"EXACT-MATCH","fieldIdentifier":"shipmentDescription","evaluationExpression":"$(shipmentDescription).equalsIgnoreCase(\"PARTS\")"}}},"output":{"ruleCatogory":"S","validationType":"messageError","outputMap":{"recommendedText":"Goods description PARTS is not  sufficient due to customs restrictions. Please insert a more exact description e.g. Pumps, Seats, Engines. See the link below for a list with examples of acceptable terms.","mipErrorCode":"RTD12","mipErrorCodeDescription":"Invalid or missing rate description details - goods description - nature and quantity of goods"}}}]
+[
+  {
+    "configurationIdentifier": "XXXXXX043",
+    "configurationName": "Unacceptable Shipment Description GOODS",
+    "parameters": {
+      "consolidatedExpression": "($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ",
+      "include": {
+        "awbOriginAirport": {
+          "parameterDescription": "Origin Airport",
+          "parameterValue": [
+            "FRA"
+          ],
+          "parameterCode": "awbOriginAirport"
+        },
+        "agentCode": {
+          "parameterDescription": "Agent",
+          "parameterValue": [
+            "1",
+            "00",
+            "00",
+            "48",
+            "17",
+            "34",
+            "12",
+            "41",
+            "000"
+          ],
+          "parameterCode": "agentCode"
+        },
+        "awbSCC": {
+          "parameterDescription": "SCC",
+          "parameterValue": [
+            "ECC",
+            "ECX"
+          ],
+          "parameterCode": "awbSCC"
+        },
+        "invocationSource": {
+          "parameterDescription": "Invocation Source",
+          "parameterValue": [
+            "FWB",
+            "XFWB"
+          ],
+          "parameterCode": "invocationSource"
+        },
+        "ownerCode": {
+          "parameterDescription": "Airline Code",
+          "parameterValue": [
+            "VIN"
+          ],
+          "parameterCode": "ownerCode"
+        },
+        "messageOriginator": {
+          "parameterDescription": "Originator ",
+          "parameterValue": [
+            "AGT"
+          ],
+          "parameterCode": "messageOriginator"
+        }
+      }
+    },
+    "evaluation": {
+      "consolidatedAttributeRuleExpression": "$(shipmentDescription).equalsIgnoreCase(\"GOODS\")",
+      "attributeEvaluation": {
+        "shipmentDescription": {
+          "fieldDescription": "Nature and quantity of goods - Goods description",
+          "fieldValue": "GOODS",
+          "operation": "EXACT-MATCH",
+          "fieldIdentifier": "shipmentDescription",
+          "evaluationExpression": "$(shipmentDescription).equalsIgnoreCase(\"GOODS\")"
+        }
+      }
+    },
+    "output": {
+      "ruleCatogory": "S",
+      "validationType": "messageError",
+      "outputMap": {
+        "recommendedText": "Goods description GOODS is not  sufficient due to customs restrictions. Please insert a more exact description. See the link below for a list with examples of acceptable terms.",
+        "mipErrorCode": "RTD12",
+        "mipErrorCodeDescription": "Invalid or missing rate description details - goods description - nature and quantity of goods"
+      }
+    }
+  },
+  {
+    "configurationIdentifier": "XXXXXX066",
+    "configurationName": "Unacceptable Shipment Description PLANTS",
+    "parameters": {
+      "consolidatedExpression": "($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ",
+      "include": {
+        "awbOriginAirport": {
+          "parameterDescription": "Origin Airport",
+          "parameterValue": [
+            "FRA"
+          ],
+          "parameterCode": "awbOriginAirport"
+        },
+        "agentCode": {
+          "parameterDescription": "Agent",
+          "parameterValue": [
+            "1",
+            "00",
+            "00",
+            "48",
+            "17",
+            "34",
+            "12",
+            "41",
+            "000"
+          ],
+          "parameterCode": "agentCode"
+        },
+        "awbSCC": {
+          "parameterDescription": "SCC",
+          "parameterValue": [
+            "ECC",
+            "ECX"
+          ],
+          "parameterCode": "awbSCC"
+        },
+        "invocationSource": {
+          "parameterDescription": "Invocation Source",
+          "parameterValue": [
+            "FWB",
+            "XFWB"
+          ],
+          "parameterCode": "invocationSource"
+        },
+        "ownerCode": {
+          "parameterDescription": "Airline Code",
+          "parameterValue": [
+            "VIN"
+          ],
+          "parameterCode": "ownerCode"
+        },
+        "messageOriginator": {
+          "parameterDescription": "Originator ",
+          "parameterValue": [
+            "AGT"
+          ],
+          "parameterCode": "messageOriginator"
+        }
+      }
+    },
+    "evaluation": {
+      "consolidatedAttributeRuleExpression": "$(shipmentDescription).equalsIgnoreCase(\"PLANTS\")",
+      "attributeEvaluation": {
+        "shipmentDescription": {
+          "fieldDescription": "Nature and quantity of goods - Goods description",
+          "fieldValue": "PLANTS",
+          "operation": "EXACT-MATCH",
+          "fieldIdentifier": "shipmentDescription",
+          "evaluationExpression": "$(shipmentDescription).equalsIgnoreCase(\"PLANTS\")"
+        }
+      }
+    },
+    "output": {
+      "ruleCatogory": "S",
+      "validationType": "messageError",
+      "outputMap": {
+        "recommendedText": "Goods description PLANTS is not  sufficient due to customs restrictions. Please insert a more exact description e.g. Tulips, rose, lemon, willow tree. See the link below for a list with examples of acceptable terms.",
+        "mipErrorCode": "RTD12",
+        "mipErrorCodeDescription": "Invalid or missing rate description details - goods description - nature and quantity of goods"
+      }
+    }
+  },
+  {
+    "configurationIdentifier": "XXXXXX060",
+    "configurationName": "Unacceptable Shipment Description PARCEL",
+    "parameters": {
+      "consolidatedExpression": "($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ",
+      "include": {
+        "awbOriginAirport": {
+          "parameterDescription": "Origin Airport",
+          "parameterValue": [
+            "FRA"
+          ],
+          "parameterCode": "awbOriginAirport"
+        },
+        "agentCode": {
+          "parameterDescription": "Agent",
+          "parameterValue": [
+            "1",
+            "00",
+            "00",
+            "48",
+            "17",
+            "34",
+            "12",
+            "41",
+            "000"
+          ],
+          "parameterCode": "agentCode"
+        },
+        "awbSCC": {
+          "parameterDescription": "SCC",
+          "parameterValue": [
+            "ECC",
+            "ECX"
+          ],
+          "parameterCode": "awbSCC"
+        },
+        "invocationSource": {
+          "parameterDescription": "Invocation Source",
+          "parameterValue": [
+            "FWB",
+            "XFWB"
+          ],
+          "parameterCode": "invocationSource"
+        },
+        "ownerCode": {
+          "parameterDescription": "Airline Code",
+          "parameterValue": [
+            "VIN"
+          ],
+          "parameterCode": "ownerCode"
+        },
+        "messageOriginator": {
+          "parameterDescription": "Originator ",
+          "parameterValue": [
+            "AGT"
+          ],
+          "parameterCode": "messageOriginator"
+        }
+      }
+    },
+    "evaluation": {
+      "consolidatedAttributeRuleExpression": "$(shipmentDescription).equalsIgnoreCase(\"PARCEL\")",
+      "attributeEvaluation": {
+        "shipmentDescription": {
+          "fieldDescription": "Nature and quantity of goods - Goods description",
+          "fieldValue": "PARCEL",
+          "operation": "EXACT-MATCH",
+          "fieldIdentifier": "shipmentDescription",
+          "evaluationExpression": "$(shipmentDescription).equalsIgnoreCase(\"PARCEL\")"
+        }
+      }
+    },
+    "output": {
+      "ruleCatogory": "S",
+      "validationType": "messageError",
+      "outputMap": {
+        "recommendedText": "Goods description PARCEL is not  sufficient due to customs restrictions. Please insert a more exact description. See the link below for a list with examples of acceptable terms.",
+        "mipErrorCode": "RTD12",
+        "mipErrorCodeDescription": "Invalid or missing rate description details - goods description - nature and quantity of goods"
+      }
+    }
+  },
+  {
+    "configurationIdentifier": "XXXXXX061",
+    "configurationName": "Unacceptable Shipment Description PARTS",
+    "parameters": {
+      "consolidatedExpression": "($(ownerCode).search(\"VIN\") != -1 )  && ($(awbOriginAirport).search(\"FRA\") != -1 )  && ($(awbSCC).search(\"ECC|ECX\") != -1 )  && ($(agentCode).search(\"1|00|00|48|17|34|12|41|000\") != -1 )  && ($(invocationSource).search(\"FWB|XFWB\") != -1 )  && ($(messageOriginator).search(\"AGT\") != -1 ) ",
+      "include": {
+        "awbOriginAirport": {
+          "parameterDescription": "Origin Airport",
+          "parameterValue": [
+            "FRA"
+          ],
+          "parameterCode": "awbOriginAirport"
+        },
+        "agentCode": {
+          "parameterDescription": "Agent",
+          "parameterValue": [
+            "1",
+            "00",
+            "00",
+            "48",
+            "17",
+            "34",
+            "12",
+            "41",
+            "000"
+          ],
+          "parameterCode": "agentCode"
+        },
+        "awbSCC": {
+          "parameterDescription": "SCC",
+          "parameterValue": [
+            "ECC",
+            "ECX"
+          ],
+          "parameterCode": "awbSCC"
+        },
+        "invocationSource": {
+          "parameterDescription": "Invocation Source",
+          "parameterValue": [
+            "FWB",
+            "XFWB"
+          ],
+          "parameterCode": "invocationSource"
+        },
+        "ownerCode": {
+          "parameterDescription": "Airline Code",
+          "parameterValue": [
+            "VIN"
+          ],
+          "parameterCode": "ownerCode"
+        },
+        "messageOriginator": {
+          "parameterDescription": "Originator ",
+          "parameterValue": [
+            "AGT"
+          ],
+          "parameterCode": "messageOriginator"
+        }
+      }
+    },
+    "evaluation": {
+      "consolidatedAttributeRuleExpression": "$(shipmentDescription).equalsIgnoreCase(\"PARTS\")",
+      "attributeEvaluation": {
+        "shipmentDescription": {
+          "fieldDescription": "Nature and quantity of goods - Goods description",
+          "fieldValue": "PARTS",
+          "operation": "EXACT-MATCH",
+          "fieldIdentifier": "shipmentDescription",
+          "evaluationExpression": "$(shipmentDescription).equalsIgnoreCase(\"PARTS\")"
+        }
+      }
+    },
+    "output": {
+      "ruleCatogory": "S",
+      "validationType": "messageError",
+      "outputMap": {
+        "recommendedText": "Goods description PARTS is not  sufficient due to customs restrictions. Please insert a more exact description e.g. Pumps, Seats, Engines. See the link below for a list with examples of acceptable terms.",
+        "mipErrorCode": "RTD12",
+        "mipErrorCodeDescription": "Invalid or missing rate description details - goods description - nature and quantity of goods"
+      }
+    }
+  }
+]
